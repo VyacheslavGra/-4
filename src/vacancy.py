@@ -9,11 +9,18 @@ class Vacancy:
 
         self.name: str = name
         self.alternate_url: str = alternate_url
-        self.salary_from: int = salary_from
-        self.salary_to: int = salary_to
+        self.salary_from: int = self._validate_salary(salary_from)
+        self.salary_to: int = self._validate_salary(salary_to)
         self.area_name: str = area_name
         self.requirement: str = requirement
         self.responsibility: str = responsibility
+
+    @staticmethod
+    def _validate_salary(salary):
+        if salary < 0:
+            raise ValueError('Зарплата не может быть отрицательной')
+        return salary
+
 
     def __str__(self) -> str:
         """ Строковое представление вакансии """

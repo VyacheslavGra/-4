@@ -1,4 +1,4 @@
-from config import VACANCIES_PATH_TXT, VACANCIES_PATH_JSON
+from src.config import VACANCIES_PATH_TXT, VACANCIES_PATH_JSON
 from src.json_saver import JSONSaver
 from src.txt_saver import TXTSaver
 from src.utils import user_choice_json, user_choice_txt

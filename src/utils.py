@@ -1,4 +1,4 @@
-from config import VACANCIES_PATH_JSON, VACANCIES_PATH_TXT
+from src.config import VACANCIES_PATH_JSON, VACANCIES_PATH_TXT
 from src.hh_api import HeadHunterAPI
 from src.json_saver import JSONSaver
 from src.txt_saver import TXTSaver
