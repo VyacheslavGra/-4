@@ -3,7 +3,7 @@ class Vacancy:
     """ Класс для работы с вакансиями """
 
     """Атрибут по умолчанию"""
-    def __init__(self, arg="Вакансия"):
+    def __init__(self, arg="Вакансии"):
         self.arg: arg = arg
 
     __slots__ = ("name", "alternate_url", "salary_from", "salary_to", "area_name", "requirement", "responsibility")
